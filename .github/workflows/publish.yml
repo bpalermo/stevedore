@@ -130,7 +130,7 @@ jobs:
           cat user.bazelrc
 
       # No version is pinned here: bazelisk reads .bazelversion.
-      - uses: bazel-contrib/setup-bazel@c5acdfb288317d0b5c0bbd7a396a3dc868bb0f86 # 0.19.0
+      - uses: bazel-contrib/setup-bazel@f34d6a05eae3c24acab7fa54587492daeaeffdab # 0.19.2
         with:
           bazelisk-cache: true
           disk-cache: ${{ github.workflow }}
@@ -448,7 +448,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - uses: bazel-contrib/setup-bazel@c5acdfb288317d0b5c0bbd7a396a3dc868bb0f86 # 0.19.0
+      - uses: bazel-contrib/setup-bazel@f34d6a05eae3c24acab7fa54587492daeaeffdab # 0.19.2
         with:
           bazelisk-cache: true
           disk-cache: ${{ github.workflow }}-check
